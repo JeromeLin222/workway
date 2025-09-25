@@ -1,1 +1,117 @@
 @import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: "Noto Sans TC", "Inter", system-ui, sans-serif;
+  }
+}
+
+
+@theme {
+  /* =========================
+   * Color system
+   * ========================= */
+  /* Brand Colors */
+  --color-primary: #4A69E8;
+  --color-secondary: #36C99F;
+  --color-black: #141A1F;
+  --color-white: #FCFCFD;
+  
+  /* Color variants */
+  --color-primary-97: #F1F4FD;
+  --color-primary-90: #D2D9F9;
+  --color-primary-80: #A4B4F3;
+  --color-primary-70: #778EEE;
+  --color-primary-60: #4A69E8;
+  --color-primary-40: #1736B5;
+  --color-primary-25: #0E2271;
+
+  --color-secondary-90: #D7F4EC;
+  --color-secondary-70: #87DEC5;
+  --color-secondary-50: #36C99F;
+  --color-secondary-35: #268C6F;
+
+  --color-natural-95: #F0F3F5;
+  --color-natural-90: #E0E5EB;
+  --color-natural-85: #D1D9E1;
+  --color-natural-75: #B2BFCC;
+  --color-natural-60: #8599AD;
+  --color-natural-50: #667F99;
+  --color-natural-30: #3D4D5C;
+  --color-natural-10: #141A1F;
+
+  --color-alpha: rgba(20, 26, 31, 0.5);
+
+  --color-success-90: #DEFCCF;
+  --color-success-40: #47C20A;
+  --color-success-30: #369108;
+
+  --color-danger-90: #FFD0CC;
+  --color-danger-70: #FF7467;
+  --color-danger-45: #E51300;
+
+  --color-warning-90: #FFEACC;
+  --color-warning-48: #F58F00;
+  --color-warning-35: #B26800;
+
+  
+  /* =========================
+   * TYPOGRAPHY
+   * ========================= */
+   
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Display: 80px */
+  --text-display: 5rem;
+  --text-display--line-height: 1;
+  --text-display--font-weight: 700;
+  
+  /* Title 5xl: 48px */
+  --text-title-5xl: 3rem;
+  --text-title-5xl--line-height: 1.2;
+  --text-title-5xl--font-weight: 700;
+  
+  /* Title 4xl: 32px */
+  --text-title-4xl: 2rem;
+  --text-title-4xl--line-height: 1.2;
+  --text-title-4xl--font-weight: 700;
+  
+  /* Title 3xl: 28px */
+  --text-title-3xl: 1.75rem;
+  --text-title-3xl--line-height: 1.2;
+  --text-title-3xl--font-weight: 700;
+  
+  /* Title 2xl: 24px */
+  --text-title-2xl: 1.5rem;
+  --text-title-2xl--line-height: 1.2;
+  --text-title-2xl--font-weight: 700;
+  
+  /* Title xl: 20px */
+  --text-title-xl: 1.25rem;
+  --text-title-xl--line-height: 1.2;
+  --text-title-xl--font-weight: 700;
+  
+  /* Body LG: 18px */
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.5;
+  --text-body-lg--font-weight: 400;
+  
+  /* Body MD - Desktop: 16px */
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.5;
+  --text-body-md--font-weight: 400;
+
+  /* Body SM: 14px */
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.5;
+  --text-body-sm--font-weight: 400;
+
+  /* Body XS: 12px */
+  --text-body-sm: 0.75rem;
+  --text-body-sm--line-height: 1.5;
+  --text-body-sm--font-weight: 400;
+
+}
