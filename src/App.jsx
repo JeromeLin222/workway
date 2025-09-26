@@ -8,12 +8,13 @@ import LoginPage from './pages/member/LoginPage';
 import RegisterPage from './pages/member/RegisterPage';
 import BookingPage from './pages/member/BookingPage';
 
-
+import { HeaderComponent } from './components/common/Header'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <HeaderComponent></HeaderComponent>
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
