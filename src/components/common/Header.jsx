@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
+import { ButtonComponent } from "../ui/Button";
 
 export function HeaderComponent() {
 	const [userInfo, setUserInfo] = useState(null);
@@ -17,6 +18,8 @@ export function HeaderComponent() {
 	const handleLogout = () => {
 		setUserInfo(null);
 	};
+
+
 
 	return(
 		<header className="bg-white">
@@ -78,6 +81,7 @@ export function HeaderComponent() {
 						登入/註冊
 					</button>
 				}
+			
 			</div>
 		</header>
 	)
