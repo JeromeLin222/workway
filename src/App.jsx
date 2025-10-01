@@ -8,7 +8,8 @@ import LoginPage from './pages/member/LoginPage';
 import RegisterPage from './pages/member/RegisterPage';
 import BookingPage from './pages/member/BookingPage';
 
-import { HeaderComponent } from './components/common/Header'
+import { HeaderComponent } from './components/common/Header';
+import { FooterComponent } from './components/common/Footer';
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
           <Route path="/member/career" element={<CareerPage />} />
         </Routes>
       </main>
+
+    <FooterComponent></FooterComponent>
     </BrowserRouter>
   )
 }

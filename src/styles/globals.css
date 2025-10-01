@@ -111,8 +111,8 @@
   --text-body-sm--font-weight: 400;
 
   /* Body XS: 12px */
-  --text-body-sm: 0.75rem;
-  --text-body-sm--line-height: 1.5;
-  --text-body-sm--font-weight: 400;
+  --text-body-xs: 0.75rem;
+  --text-body-xs--line-height: 1.5;
+  --text-body-xs--font-weight: 400;
 
 }
