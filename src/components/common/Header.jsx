@@ -25,9 +25,10 @@ export function HeaderComponent() {
 		<header className="bg-white">
 			<div className="max-w-7xl py-3 px-18 mx-auto flex justify-between items-center">
 				<NavLink to={"/"}>
-					<img className="" src="/images/logo.svg" alt="logo" />
+					<img className="hidden md:block" src="/images/logo.svg" alt="logo" />
+					<img className="w-[92px] h-[35.61px] md:hidden" src="/images/logo.svg" alt="logo" />
 				</NavLink>
-				<div className="">
+				<div className="hidden md:block">
 					<ul className="flex gap-3">
 						<li>
 							<NavLink 
@@ -65,24 +66,34 @@ export function HeaderComponent() {
 					</ul>
 				</div>
 				
-				{ userInfo ? (
-					<button type="button" onClick={handleLogout} className="flex items-center justify-center">
-						<img src={userInfo.avatar} alt="avatar" className="w-[44px] h-[44px] rounded-full mr-2"/>
-						<p className="font-medium">
-							{userInfo.username}
-						</p>
-					</button>
-				):
-					<button 
-						type="button"
-						onClick={handleLogin} 
-						className="border border-natural-85 py-2 px-6 rounded-2xl hover:bg-natural-90 hover:border-0"
-					>
-						登入/註冊
-					</button>
-				}
-			
+				<div className="flex gap-3">
+					{ userInfo ? (
+						<button type="button" onClick={handleLogout} className="flex items-center justify-center">
+							<img src={userInfo.avatar} alt="avatar" className="w-[44px] h-[44px] rounded-full mr-2"/>
+							<p className="md:font-medium">
+								{userInfo.username}
+							</p>
+						</button>
+					):
+						<button 
+							type="button"
+							onClick={handleLogin} 
+							className="border border-natural-85 text-body-sm md:text-body-md py-2 px-4 md:px-6 rounded-2xl hover:bg-natural-90 hover:border-0"
+						>
+							登入/註冊
+						</button>
+					}
+
+					<div>
+						<button
+							type="button"
+							className="p-[10px] md:hidden"
+						>
+							<img src="/images/icon/menu.svg" alt="menu" />
+						</button>
+					</div>
 			</div>
+				</div>
 		</header>
 	)
 }

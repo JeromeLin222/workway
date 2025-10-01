@@ -15,6 +15,7 @@ export function ButtonComponent({
   size = "md",
   iconUrl = null,
   clickEvent = null,
+  style = "",
   children
 }) {
   const typeMap = {
@@ -35,7 +36,7 @@ export function ButtonComponent({
   return(
     <button
       type="button"
-      className={`rounded-2xl ${typeMap[type][color]} ${sizeMap[size]} flex items-center justify-center gap-1`} 
+      className={`rounded-2xl ${typeMap[type][color]} ${sizeMap[size]} ${style} flex items-center justify-center gap-1`} 
       onClick={clickEvent}
     >
       {children}
