@@ -23,7 +23,7 @@ export function HeaderComponent() {
 	
 	return(<>
 		<header className="bg-white">
-			<div className="max-w-7xl py-3 px-[14px] md:px-3 md:px-18 mx-auto flex justify-between items-center">
+			<div className="max-w-7xl py-3 px-[clamp(1rem,4vw,4.5rem)] mx-auto flex justify-between items-center">
 				<NavLink to={"/"}>
 					<img className="hidden md:block" src="/images/logo.svg" alt="logo" />
 					<img className="w-[92px] h-[35.61px] md:hidden" src="/images/logo.svg" alt="logo" />
