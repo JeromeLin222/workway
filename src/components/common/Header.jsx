@@ -100,12 +100,11 @@ export function HeaderComponent() {
 		<ModalComponent
 			isOpen={isOpenModal}
 		>
-			<div className="p-6">
+			<div className="p-6 h-full flex flex-col">
 				<button type="button" className="ml-auto block p-2.5 mb-4" onClick={()=>setIsOpenModal(false)}>
 					<img src="/images/icon/close.svg" alt="close" />
 				</button>
-				<div className="text-center">
-					<ul className="grid gap-6">
+					<ul className="grid gap-6 justify-center">
 						<li className="py-4">
 							<NavLink 
 								to={"/services"}
@@ -131,6 +130,12 @@ export function HeaderComponent() {
 							</NavLink>
 						</li>
 					</ul>
+					<ButtonComponent color="secondary" style="mt-auto">
+						<span className="text-title-2xl">
+							登入/註冊
+						</span>
+					</ButtonComponent>
+				<div className="text-center flex flex-col">
 				</div>
 			</div>
 		</ModalComponent>
