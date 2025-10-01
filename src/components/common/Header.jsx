@@ -1,9 +1,11 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
 import { ButtonComponent } from "../ui/Button";
+import { ModalComponent } from "../common/Modal";
 
 export function HeaderComponent() {
 	const [userInfo, setUserInfo] = useState(null);
+	const [isOpenModal, setIsOpenModal] = useState(false);
 
 	// mock login
 	const handleLogin = () => {
@@ -18,12 +20,10 @@ export function HeaderComponent() {
 	const handleLogout = () => {
 		setUserInfo(null);
 	};
-
-
-
-	return(
+	
+	return(<>
 		<header className="bg-white">
-			<div className="max-w-7xl py-3 px-18 mx-auto flex justify-between items-center">
+			<div className="max-w-7xl py-3 px-[14px] md:px-3 md:px-18 mx-auto flex justify-between items-center">
 				<NavLink to={"/"}>
 					<img className="hidden md:block" src="/images/logo.svg" alt="logo" />
 					<img className="w-[92px] h-[35.61px] md:hidden" src="/images/logo.svg" alt="logo" />
@@ -88,6 +88,7 @@ export function HeaderComponent() {
 						<button
 							type="button"
 							className="p-[10px] md:hidden"
+							onClick={() => setIsOpenModal(true)}
 						>
 							<img src="/images/icon/menu.svg" alt="menu" />
 						</button>
@@ -95,5 +96,43 @@ export function HeaderComponent() {
 			</div>
 				</div>
 		</header>
-	)
+
+		<ModalComponent
+			isOpen={isOpenModal}
+		>
+			<div className="p-6">
+				<button type="button" className="ml-auto block p-2.5 mb-4" onClick={()=>setIsOpenModal(false)}>
+					<img src="/images/icon/close.svg" alt="close" />
+				</button>
+				<div className="text-center">
+					<ul className="grid gap-6">
+						<li className="py-4">
+							<NavLink 
+								to={"/services"}
+								onClick={()=>setIsOpenModal(false)}
+							>
+								服務方案
+							</NavLink>
+						</li>
+						<li className="py-4">
+							<NavLink 
+								to={"/about"}
+								onClick={()=>setIsOpenModal(false)}
+							>
+								關於我們
+							</NavLink>
+						</li>
+						<li className="py-4">
+							<NavLink 
+								to={"/contact"}
+								onClick={()=>setIsOpenModal(false)}
+							>
+								聯絡我們
+							</NavLink>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</ModalComponent>
+	</>)
 }
