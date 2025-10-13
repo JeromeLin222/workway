@@ -17,14 +17,20 @@ function HomePage() {
               </p>
               <ButtonComponent
                 color="secondary"
+                iconUrl="/images/icon/chevron.svg"
               >
-                <div className="flex">
-                  <p className="text-2xl font-bold mr-1">開始你的職旅</p> 
-                  <img src="/images/icon/chevron.svg"/>
-                </div>
+                <p className="text-2xl font-bold">開始你的職旅</p> 
               </ButtonComponent>
             </div>
           </div>
+        </div>
+        <div className="grid pb-20 grid-cols-3 gap-6 px-[clamp(0.25rem,1vw,1.5rem)]">
+          <img src="/images/index/hero-1.png" alt="hero image 1" />
+          <div>
+            <img className="mb-6" src="/images/index/hero-2.png" alt="hero image 2" />
+            <img src="/images/index/hero-3.png" alt="hero image 3" />
+          </div>
+          <img src="/images/index/hero-4.png" alt="hero image 4" />
         </div>
       </div>
     </main>
