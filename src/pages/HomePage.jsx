@@ -4,8 +4,8 @@ function HomePage() {
   return (
     <main>
       <div>
-        <div className="max-w-7xl px-[clamp(1rem,4vw,4.5rem)] mx-auto flex justify-center items-center flex-col">
-          <div className="bg-[url(/images/index/gradient-ball.png)] bg-cover bg-top bg-no-repeat">
+        <div className="container bg-[url(/images/index/gradient-ball.png)] bg-top bg-size-[800px_800px] bg-no-repeat max-w-7xl flex justify-center items-center flex-col">
+          <div>
             <h1 className="text-title-4xl md:text-display text-center pt-12 md:pt-20 mb-6">
               一起陪伴、探索<br />
               還有你那些未完成的夢
