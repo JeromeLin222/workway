@@ -54,7 +54,7 @@ function HomePage() {
       </div>
       {/* story section */}
       <div className="py-12 md:py-20 relative">
-        <div className="container md:grid md:grid-cols-3 gap-6 flex flex-col">
+        <div className="container lg:grid lg:grid-cols-3 gap-6 flex flex-col">
           <div>
             <img className="mb-6" src="/images/logo-icon.svg" alt="logo icon" />
             <h2 className="text-title-5xl mb-6">
@@ -93,12 +93,12 @@ function HomePage() {
       </div>  
       {/* choose section */}
       <div className="py-12 bg-natural-95">
-        <div className="container">
+        <div className="container relative">
           <div className='flex flex-col items-center mb-12'>    
             <img src="/images/index/why-workway.svg" alt="why icon" className="mb-1" />
-            <h2 className="font-bold text-title-5xl">選擇職旅 WorkWay</h2>
+            <h2 className="font-bold text-title-4xl lg:text-title-5xl">選擇職旅 WorkWay</h2>
           </div>
-          <div className="grid grid-cols-3 gap-6 mb-12">
+          <div className="lg:grid lg:grid-cols-3 flex flex-col items-center gap-4 lg:gap-6 mb-12 relative z-10">
             {
               advantageData.map((advantage) => 
                 <AdvantageCard key={advantage.id} {...advantage} />
@@ -107,8 +107,9 @@ function HomePage() {
           </div>
           <div className='flex items-center'>
             <span className='text-natural-50 mr-auto'>不是套模板的建議，而是為你量身打造的陪伴！</span>
-            <div className='border-b border-natural-85 w-[70%]'></div>
+            <div className='hidden lg:block border-b border-natural-85 w-[70%]'></div>
           </div>
+          <img src="/images/index/adv-vectors.svg" className='hidden lg:block absolute top-0 right-[1rem] z-0' />
         </div>
       </div>
 
