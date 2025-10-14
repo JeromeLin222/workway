@@ -51,7 +51,7 @@ function HomePage() {
       </div>
       {/* story section */}
       <div className="py-12 md:py-20 relative">
-        <div className="container grid grid-cols-3 gap-6">
+        <div className="container md:grid md:grid-cols-3 gap-6 flex flex-col">
           <div>
             <img className="mb-6" src="/images/logo-icon.svg" alt="logo icon" />
             <h2 className="text-title-5xl mb-6">
@@ -60,18 +60,24 @@ function HomePage() {
             </h2>
             <p className="text-natural-50 text-body-lg">每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活</p>
           </div>
-          <div className="col-span-2 overflow-visible">
+          <div className="col-span-2">
             <Swiper
               // install Swiper modules
               modules={[Navigation, A11y]}
-              spaceBetween={24}
-              slidesPerView="auto"
+              spaceBetween={16}
+              slidesPerView={1.2}
               freeMode={true}
+              breakpoints={{
+                768: {
+                  slidesPerView: 2.8,
+                  spaceBetween: 24
+                }
+              }}
             >
               {storyData.map((story) => (
                 <SwiperSlide
                   key={story.id}
-                  style={{ width: 'calc((100% + 50%) / 3 - 16px)' }}
+                  // style={{ width: 'calc((100% + 50%) / 3 - 16px)' }}
                 >
                   <StoryCard {...story} />
                 </SwiperSlide>
