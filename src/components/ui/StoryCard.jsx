@@ -1,3 +1,16 @@
+/**
+ * Story card component for displaying user success stories
+ * 
+ * @param {object} props - Component props
+ * @param {string} props.image - Image URL for the story cover
+ * @param {string} props.title - Story title
+ * @param {string} props.content - Story content/description
+ * @param {string} props.role - User's professional role
+ * @param {string} props.name - User's name
+ * @param {number} props.age - User's age
+ * @param {string|null} [props.tag=null] - Optional tag to display (e.g., "數位遊牧 2 年")
+ * 
+*/
 export function StoryCard({ 
 	image, 
 	title, 

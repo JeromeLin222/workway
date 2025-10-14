@@ -87,6 +87,39 @@ function HomePage() {
           </div>
         </div>
         <div className="bg-natural-95 h-[200px] w-full absolute bottom-0"></div>
+      </div>  
+      {/* choose section */}
+      <div className="py-12 bg-natural-95">
+        <div className="container">
+          <div className='flex flex-col items-center mb-12'>    
+            <img src="/images/index/why-workway.svg" alt="why icon" className="mb-1" />
+            <h2 className="font-bold text-title-5xl">選擇職旅 WorkWay</h2>
+          </div>
+          <div className="grid grid-cols-3 gap-6">
+            <div className='relative'>
+              <img className='rounded-3xl' src="/images/index/adv-1.png" alt="adv image" />
+              <span className='py-3 pl-3 pr-6 text-natural-50 font-bold text-title-2xl flex absolute bottom-0 bg-natural-95 rounded-tr-xl'>
+                <img className='mr-2' src="/images/icon/ads.svg" />
+                實戰經驗
+              </span>
+            </div>
+            <div className='relative'>
+              <img className='rounded-3xl' src="/images/index/adv-2.png" alt="adv image" />
+              <span className='py-3 pl-3 pr-6 text-natural-50 font-bold text-title-2xl flex absolute bottom-0 bg-natural-95 rounded-tr-xl'>
+                <img className='mr-2' src="/images/icon/ads.svg" />
+                全方位支持
+              </span>
+            </div>
+            <div className='relative'>
+              <img className='rounded-3xl' src="/images/index/adv-3.png" alt="adv image" />
+              <span className='py-3 pl-3 pr-6 text-natural-50 font-bold text-title-2xl flex absolute bottom-0 bg-natural-95 rounded-tr-xl'>
+                <img className='mr-2' src="/images/icon/ads.svg" />
+                社群力量
+              </span>
+            </div>
+           
+          </div>
+        </div>
       </div>
 
     </main>
