@@ -9,8 +9,11 @@ import 'swiper/css/scrollbar';
 
 import { ButtonComponent } from "../components/ui/Button";
 import { StoryCard } from '../components/ui/StoryCard';
+import { AdvantageCard } from '../components/ui/AdvantageCard';
 
 import { storyData } from '../data/mockData';
+import { advantageData } from '../data/mockData';
+
 
 function HomePage() {
   return (
@@ -96,28 +99,11 @@ function HomePage() {
             <h2 className="font-bold text-title-5xl">選擇職旅 WorkWay</h2>
           </div>
           <div className="grid grid-cols-3 gap-6">
-            <div className='relative'>
-              <img className='rounded-3xl' src="/images/index/adv-1.png" alt="adv image" />
-              <span className='py-3 pl-3 pr-6 text-natural-50 font-bold text-title-2xl flex absolute bottom-0 bg-natural-95 rounded-tr-xl'>
-                <img className='mr-2' src="/images/icon/ads.svg" />
-                實戰經驗
-              </span>
-            </div>
-            <div className='relative'>
-              <img className='rounded-3xl' src="/images/index/adv-2.png" alt="adv image" />
-              <span className='py-3 pl-3 pr-6 text-natural-50 font-bold text-title-2xl flex absolute bottom-0 bg-natural-95 rounded-tr-xl'>
-                <img className='mr-2' src="/images/icon/ads.svg" />
-                全方位支持
-              </span>
-            </div>
-            <div className='relative'>
-              <img className='rounded-3xl' src="/images/index/adv-3.png" alt="adv image" />
-              <span className='py-3 pl-3 pr-6 text-natural-50 font-bold text-title-2xl flex absolute bottom-0 bg-natural-95 rounded-tr-xl'>
-                <img className='mr-2' src="/images/icon/ads.svg" />
-                社群力量
-              </span>
-            </div>
-           
+            {
+              advantageData.map((advantage) => 
+                <AdvantageCard key={advantage.id} {...advantage} />
+              )
+            }
           </div>
         </div>
       </div>

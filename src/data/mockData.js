@@ -57,3 +57,25 @@ export const storyData = [
     age: 25
   },
 ]
+
+
+export const advantageData = [
+  {
+    id: 1,
+    image: "/images/index/adv-1.png",
+    icon: "/images/icon/ads.svg",
+    title: "實戰經驗"
+  },
+  {
+    id: 2,
+    image: "/images/index/adv-2.png",
+    icon: "/images/icon/ads.svg",
+    title: "全方位支持"
+  },
+  {
+    id: 3,
+    image: "/images/index/adv-3.png",
+    icon: "/images/icon/ads.svg",
+    title: "社群力量"
+  }
+]
