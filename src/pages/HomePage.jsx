@@ -98,12 +98,16 @@ function HomePage() {
             <img src="/images/index/why-workway.svg" alt="why icon" className="mb-1" />
             <h2 className="font-bold text-title-5xl">選擇職旅 WorkWay</h2>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-6 mb-12">
             {
               advantageData.map((advantage) => 
                 <AdvantageCard key={advantage.id} {...advantage} />
               )
             }
+          </div>
+          <div className='flex items-center'>
+            <span className='text-natural-50 mr-auto'>不是套模板的建議，而是為你量身打造的陪伴！</span>
+            <div className='border-b border-natural-85 w-[70%]'></div>
           </div>
         </div>
       </div>
