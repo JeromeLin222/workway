@@ -10,10 +10,11 @@ import 'swiper/css/scrollbar';
 import { ButtonComponent } from "../components/ui/Button";
 import { StoryCard } from '../components/ui/StoryCard';
 import { AdvantageCard } from '../components/ui/AdvantageCard';
+import { ServeCard } from '../components/ui/ServeCard';
 
 import { storyData } from '../data/mockData';
 import { advantageData } from '../data/mockData';
-
+import {serveData} from '../data/mockData';
 
 function HomePage() {
   return (
@@ -134,7 +135,22 @@ function HomePage() {
           </div>
         </div>
         <div className='absolute top-[530px] right-[-160px] w-[400px] h-[400px] lg:top-[140px] lg:right-[-180px] lg:w-[800px] lg:h-[800px] z-0 bg-[url(/images/index/gradient-ball.png)] bg-cover bg-center'></div>
-        {/* <img className="absolute top-[140px] right-[-180px] w-[800px] h-[800px] z-0" src="/images/index/gradient-ball.png" alt="" /> */}
+      </div>
+      {/* flow section */}
+      <div className="py-12 md:py-20 bg-primary">
+        <div className="container flex flex-col items-center">
+          <h2 className='text-title-4xl md:text-title-5xl text-white mb-4 lg:mb-6'>服務流程</h2>
+          <p className='text-white text-body-md md:text-body-lg mb-6 lg:mb-12'>簡單四步，踏上你的職旅</p>
+          <div className="grid grid-cols-4 gap-6">
+            {serveData.map((serve, index) => (
+              <ServeCard
+                key={serve.id}
+                {...serve}
+                index={index}
+               />
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   ); 

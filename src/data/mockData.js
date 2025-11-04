@@ -79,3 +79,30 @@ export const advantageData = [
     title: "社群力量"
   }
 ]
+
+export const serveData = [
+  {
+    id: 1,
+    image: "/images/index/serve-1.svg",
+    title: "免費註冊會員",
+    description: "透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。",
+  },
+  {
+    id: 2,
+    image: "/images/index/serve-2.svg",
+    title: "填寫職旅計劃",
+    description: "透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。了解你的技能、熱情與市場需求的交會點，找出屬於你的獨特定位。",
+  },
+  {
+    id: 3,
+    image: "/images/index/serve-3.svg",
+    title: "初次諮詢",
+    description: "依據你的目標與現況，給予最直接的建議，建立清晰的轉型思路。",
+  },
+  {
+    id: 3,
+    image: "/images/index/serve-4.svg",
+    title: "實戰指導",
+    description: "專家一對一指導，從品牌建立到客戶開發，每一步都有明確方向。",
+  },
+]
