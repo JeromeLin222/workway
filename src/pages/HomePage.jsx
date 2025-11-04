@@ -113,16 +113,16 @@ function HomePage() {
         </div>
       </div>
       {/* partner section */}
-      <div className="py-12 md:py-20 ">
-        <div className="container">
-          <div className="grid grid-cols-2 gap-6">
+      <div className="py-12 md:py-20 relative overflow-hidden">
+        <div className="container relative z-10">
+          <div className="lg:grid lg:grid-cols-2 gap-6">
             <div>
-              <img className='rounded-xl' src="/images/index/team.png" alt="team image" />
+              <img className='rounded-xl mb-4 lg:md-0' src="/images/index/team.png" alt="team image" />
             </div>
-            <div className='flex flex-col gap-6 items-start'>
-              <h2 className="text-title-5xl">遇見你的職涯夥伴</h2>
+            <div className='px-3 lg:px-4 flex flex-col gap-4 md:gap-6 items-center md:items-start'>
+              <h2 className="text-title-4xl lg:text-title-5xl">遇見你的職涯夥伴</h2>
               <span className="text-body-lg text-natural-50">每位顧問都有獨特專長，更重要的是：</span>
-              <h3 className="text-title-2xl text-primary bg-natural-95 p-2">“ 他們都曾面對你正在經歷的挑戰 ”</h3>
+              <h3 className="text-title-xl md:text-title-2xl text-primary bg-natural-95 p-2">“他們都曾面對你正在經歷的挑戰”</h3>
               <p className="text-natural-50 text-body-lg">職旅 WorkWay 匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。我們的顧問不只教授理論，更分享親身經歷的挑戰與解決之道。</p>
               <p className="text-natural-50 text-body-lg">我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。</p>
               <ButtonComponent
@@ -133,6 +133,8 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <div className='absolute top-[530px] right-[-160px] w-[400px] h-[400px] lg:top-[140px] lg:right-[-180px] lg:w-[800px] lg:h-[800px] z-0 bg-[url(/images/index/gradient-ball.png)] bg-cover bg-center'></div>
+        {/* <img className="absolute top-[140px] right-[-180px] w-[800px] h-[800px] z-0" src="/images/index/gradient-ball.png" alt="" /> */}
       </div>
     </main>
   ); 
