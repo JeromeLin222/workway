@@ -141,7 +141,7 @@ function HomePage() {
         <div className="container flex flex-col items-center">
           <h2 className='text-title-4xl md:text-title-5xl text-white mb-4 lg:mb-6'>服務流程</h2>
           <p className='text-white text-body-md md:text-body-lg mb-6 lg:mb-12'>簡單四步，踏上你的職旅</p>
-          <div className="grid grid-cols-4 gap-6">
+          <div className="hidden md:grid md:grid-cols-4 md:gap-6">
             {serveData.map((serve, index) => (
               <ServeCard
                 key={serve.id}
@@ -150,6 +150,25 @@ function HomePage() {
                />
             ))}
           </div>
+        </div>
+        <div className="md:hidden px-3 flex items-stretch">
+          <Swiper
+            modules={[Navigation, A11y]}
+            spaceBetween={16}
+            slidesPerView={1.2}
+            freeMode={true}
+          >
+            {serveData.map((serve, index) => (
+              <SwiperSlide
+                key={serve.id}
+              >         
+                <ServeCard
+                  {...serve}
+                  index={index}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </main>

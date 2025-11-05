@@ -15,7 +15,7 @@ export function ServeCard({
 	index
 }) {
 	return (
-		<div className="relative flex flex-col bg-white rounded-3xl shadow-sm items-center pt-16 pb-12 px-6">
+		<div className="relative h-full flex flex-col bg-white rounded-3xl shadow-sm items-center pt-16 pb-12 px-6">
 			<img className='mb-4 md:mb-6' src={image} alt="serve step1" />
 			<h3 className='mb-4 md:mb-6 text-title-xl md:text-title-2xl'>{title}</h3>
 			<p className='text-center text-body-sm text-natural-50'>{description}</p>

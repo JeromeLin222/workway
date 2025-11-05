@@ -100,7 +100,7 @@ export const serveData = [
     description: "依據你的目標與現況，給予最直接的建議，建立清晰的轉型思路。",
   },
   {
-    id: 3,
+    id: 4,
     image: "/images/index/serve-4.svg",
     title: "實戰指導",
     description: "專家一對一指導，從品牌建立到客戶開發，每一步都有明確方向。",
