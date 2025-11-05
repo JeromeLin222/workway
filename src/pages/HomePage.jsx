@@ -11,10 +11,13 @@ import { ButtonComponent } from "../components/ui/Button";
 import { StoryCard } from '../components/ui/StoryCard';
 import { AdvantageCard } from '../components/ui/AdvantageCard';
 import { ServeCard } from '../components/ui/ServeCard';
+import { AccordionItem } from '../components/ui/AccordionItem';
+
 
 import { storyData } from '../data/mockData';
 import { advantageData } from '../data/mockData';
-import {serveData} from '../data/mockData';
+import { serveData } from '../data/mockData';
+import { faqData } from '../data/mockData';
 
 function HomePage() {
   return (
@@ -169,6 +172,30 @@ function HomePage() {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      </div>
+      {/* Q&A section */}
+      <div className="py-12 md:py-20 bg-[url(/images/index/bg-grid.png)]">
+        <div className="container">
+            <div className="flex flex-col items-center mb-12">
+              <img src="/images/index/QandA.png" alt="qa icon" className="mb-1"/>
+              <h2 className="text-title-4xl md:text-title-5xl">你可能有些困惑...</h2>
+            </div>
+            <div className="relative grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+              <div className="hidden md:block md:col-span-4">
+                <img src="/images/index/qa.svg"/>
+              </div>
+              <div className='col-span1 md:col-span-7 md:col-start-6 flex flex-col gap-6'>
+                {
+                  faqData.map((faq) => (
+                    <AccordionItem
+                      key={faq.id}
+                      {...faq}
+                    />
+                  ))
+                }
+              </div>
+            </div>
         </div>
       </div>
     </main>
