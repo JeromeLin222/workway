@@ -15,7 +15,7 @@ export function ButtonComponent({
   size = "md",
   iconUrl = null,
   clickEvent = null,
-  style = "",
+  className = "",
   children
 }) {
   const typeMap = {
@@ -30,13 +30,18 @@ export function ButtonComponent({
   const sizeMap = {
     lg: "px-5 py-4 text-title-2xl",
     md: "px-4 py-3",
-    sm: "px-2 py-1 text-body-sm text-natural-50"
+    sm: "px-2 py-1 text-body-sm text-natural-50",
+    custom: ""
   }
+
+  const baseClass = "rounded-2xl flex items-center justify-center gap-1"
+  const buttonClass = `${baseClass} ${typeMap[type][color]} ${sizeMap[size]} ${className}`
+
 
   return(
     <button
       type="button"
-      className={`rounded-2xl ${typeMap[type][color]} ${sizeMap[size]} ${style} flex items-center justify-center gap-1`} 
+      className={buttonClass}
       onClick={clickEvent}
     >
       {children}

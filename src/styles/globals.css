@@ -116,3 +116,16 @@
   --text-body-xs--font-weight: 400;
 
 }
+
+@utility container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: clamp(0.75rem, 1vw, 4.5rem);
+}
+
+@layer base {
+  .material-symbols-outlined {
+    font-size: inherit;
+    line-height: 1;
+  }
+}
