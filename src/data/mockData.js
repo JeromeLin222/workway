@@ -134,3 +134,88 @@ export const faqData = [
     answer: "很多人來找 WorkWay 時，其實也處於迷惘期。我們的一對一諮詢設計，就是從理解你的人生目標、價值觀與現實條件開始，逐步協助你釐清想要的生活方式與可能路徑。你不需要有答案，只需要願意開始對話。"
   },
 ]
+
+
+export const planData = [
+  {
+    id: 1,
+    label: "全面方案",
+    title: "職涯轉型全程計畫",
+    description:"針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。",
+    features: [
+      "深度職能轉換評估與規劃",
+      "跨領域技能遷移策略",
+      "新領域人脈建立指導",
+      "長期職涯發展藍圖"
+    ],
+    targetAudience: "從企業職場轉型為自由工作者 / 數位遊牧者的專業人士",
+    price: 120000,
+    image: "/images/service/plan-1.svg",
+    badge: "Hot",
+    highlighted: true
+  },
+  {
+    id: 2,
+    label: "加速方案",
+    title: "自由工作加速計畫",
+    description:"為已確定要轉型但需要全面規劃的專業人士設計。六次深度諮詢，從心態調整到實際操作，全方位為您的轉型做好準備。",
+    features: [
+      "詳細的市場機會分析",
+      "個人優勢定位與差異化策略",
+      "完整的轉型時間表與里程碑",
+      "轉型期間的心理健康維護策略"
+    ],
+    targetAudience: "已經開始自由工作但想提升效能和收入的專業人士",
+    price: 80000,
+    image: "/images/service/plan-2.svg",
+    badge: null,
+    highlighted: false
+  },
+  {
+    id: 3,
+    label: "遊牧方案",
+    title: "數位遊牧生活計畫",
+    description:"針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。",
+    features: [
+      "深度職能轉換評估與規劃",
+      "新領域人脈建立指導",
+      "跨領域技能遷移策略",
+      "長期職涯發展藍圖"
+    ],
+    targetAudience: "希望同時擁有工作自由和地域自由的專業人士",
+    price: 60000,
+    image: "/images/service/plan-3.svg",
+    badge: null,
+    highlighted: false
+  },
+]
+
+export const consultPlanData = [
+  {
+    id: 1,
+    title: "職涯探索評估",
+    description: "3 次一對一諮詢，了解可能性和適配性",
+    image: "/images/service/server-1.svg",
+    price: 3800,
+    badge: null,
+    highlighted: false
+  },
+  {
+    id: 2,
+    title: "職涯轉型規劃",
+    description: "6 次深度諮詢，建立完整轉型藍圖",
+    image: "/images/service/server-2.svg",
+    price: 12000,
+    badge: "Hot",
+    highlighted: true
+  },
+  {
+    id: 3,
+    title: "專業定位與品牌建立",
+    description: "4 次專業諮詢，確立市場定位與差異化策略",
+    image: "/images/service/server-3.svg",
+    price: 8800,
+    badge: null,
+    highlighted: false
+  }
+]
