@@ -42,27 +42,13 @@ function ServicePage() {
                 <h2 className="text-title-3xl md:text-title-4xl mb-4 md:mb-6">基礎諮詢服務</h2>
                 <p className="text-body-md md:text-body-lg text-natural-50">我們提供第一次免費諮詢，一起建立信任的橋樑</p>
               </div>
-              <div className="grid grid-cols-3 gap-6">
+              <div className="flex flex-col gap-4 md:gap-6 md:grid grid-cols-3 ">
                 {consultPlanData.map((consultPlan) => (
                   <ConsultPlanCard 
                     key={consultPlan.id}
                     {...consultPlan}
                   />
                 ))}
-                {/* <div className="py-6 flex flex-col items-center bg-white rounded-2xl shadow-card">
-                  <img className="mb-4 lg:mb-6" src="/images/service/server-1.svg" alt="server 1" />
-                  <div className="text-center mb-4 lg:mb-6">
-                    <h3 className="text-title-xl lg:text-title-2xl mb-2">職涯探索評估</h3>
-                    <p className="text-body-sm text-natural-50 mb-2">3 次一對一諮詢，了解可能性和適配性</p>
-                    <p className="text-title-xl lg:text-title-2xl text-primary">NT$ 3,800</p>
-                  </div>
-                  <ButtonComponent>
-                    <div className="flex">
-                      <p>我有興趣</p>
-                      <span className="material-symbols-outlined">chevron_right</span>
-                    </div>
-                  </ButtonComponent>
-                </div> */}
               </div>
             </div>
         </div> 
