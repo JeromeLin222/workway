@@ -12,22 +12,25 @@ export function PlanCard({
 	highlighted = false
 }) {
 	return (
-		<div className={`rounded-2xl p-12 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.12)] flex relative ${highlighted ? 'border-2 border-secondary' : 'border-0'}`}>
-			<div className="mr-6 w-full max-w-[876px]">
+		<div className={`rounded-2xl px-6 py-12 lg:p-12 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.12)] flex relative ${highlighted ? 'border-2 border-secondary' : 'border-0'}`}>
+			<div className="m-auto lg:mr-6 w-full max-w-[876px]">
 				<div className="text-primary mb-2">{label}</div>
-				<h3 className="text-title-2xl mb-2">{title}</h3>
-				<p className="mb-2">{description}</p>
+				<h3 className="text-title-xl lg:text-title-2xl mb-2">{title}</h3>
+				<p className="text-body-sm lg:text-body-md mb-2">{description}</p>
 				<ul className="flex flex-col gap-1 mb-6">
 					{features.map((feature, index) => (
-						<li key={index} className="flex">
+						<li key={index} className="flex text-body-sm lg:text-body-md">
 							<span class="material-symbols-outlined text-primary mr-2">stat_0</span>
 							{feature}
 						</li>
 					))}
 				</ul>
-				<div className="p-6 bg-natural-95 rounded-2xl mb-6">
-					<p className="mb-2">適合對象：<span className="font-bold">{targetAudience}</span></p>
-					<p>優惠價格：<span className="text-title-2xl text-primary">{price}</span></p>
+				<div className="p-6 bg-natural-95 rounded-2xl text-body-sm lg:text-body-md mb-6">
+					<div className="flex mb-2 items-center">
+						<p className="flex-none">適合對象：</p> 
+						<p className="font-bold">{targetAudience}</p>
+					</div>
+					<p>優惠價格：<span className="text-title-xl lg:text-title-2xl text-primary">NT$ {price}</span></p>
 				</div>
 				<ButtonComponent>
 					<div className="flex">
@@ -36,7 +39,7 @@ export function PlanCard({
 					</div>
 				</ButtonComponent>
 			</div>
-			<div className="shrink max-w-[300px] max-h-[337px]">
+			<div className="hidden lg:block shrink max-w-[300px] max-h-[337px]">
 				<img className="w-full h-full" src={image} alt="" />
 			</div>
 			{badge && (
