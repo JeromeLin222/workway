@@ -21,14 +21,26 @@ function ServicePage() {
             </div>
             <div className="border-2 border-secondary rounded-2xl p-12 flex">
               <div className="mr-6 w-full max-w-[876px]">
-                <span className="text-primary mb-2">全面方案</span>
+                <div className="text-primary mb-2">全面方案</div>
                 <h3 className="text-title-2xl mb-2">職涯轉型全程計畫</h3>
                 <p className="mb-2">針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。</p>
-                <ul className="flex flex-col gpa-1 mb-6">
-                  <li>深度職能轉換評估與規劃</li>
-                  <li>跨領域技能遷移策略</li>
-                  <li>新領域人脈建立指導</li>
-                  <li>長期職涯發展藍圖</li>
+                <ul className="flex flex-col gap-1 mb-6">
+                  <li className="flex">
+                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
+                    深度職能轉換評估與規劃
+                  </li>
+                  <li className="flex">
+                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
+                    跨領域技能遷移策略
+                  </li>
+                  <li className="flex">
+                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
+                    新領域人脈建立指導
+                  </li>
+                  <li className="flex">
+                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
+                    長期職涯發展藍圖
+                  </li>
                 </ul>
                 <div className="p-6 bg-natural-95 rounded-2xl mb-6">
                   <p className="mb-2">適合對象：<span className="font-bold">從企業職場轉型為自由工作者 / 數位遊牧者的專業人士</span></p>
