@@ -1,4 +1,7 @@
 import { ButtonComponent } from "../components/ui/Button";
+import { PlanCard } from "../components/ui/PlanCard";
+
+import { planData } from "../data/mockData";
 
 function ServicePage() {
     return (
@@ -19,43 +22,13 @@ function ServicePage() {
               <h2 className="text-title-3xl md:text-title-4xl mb-4 md:mb-6">職涯轉型全程計畫</h2>
               <p className="text-body-md md:text-body-lg text-natural-50">從企業到自由，無縫轉型之旅</p>
             </div>
-            <div className="border-2 border-secondary rounded-2xl p-12 flex">
-              <div className="mr-6 w-full max-w-[876px]">
-                <div className="text-primary mb-2">全面方案</div>
-                <h3 className="text-title-2xl mb-2">職涯轉型全程計畫</h3>
-                <p className="mb-2">針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。</p>
-                <ul className="flex flex-col gap-1 mb-6">
-                  <li className="flex">
-                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
-                    深度職能轉換評估與規劃
-                  </li>
-                  <li className="flex">
-                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
-                    跨領域技能遷移策略
-                  </li>
-                  <li className="flex">
-                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
-                    新領域人脈建立指導
-                  </li>
-                  <li className="flex">
-                    <span class="material-symbols-outlined text-primary mr-2">stat_0</span>
-                    長期職涯發展藍圖
-                  </li>
-                </ul>
-                <div className="p-6 bg-natural-95 rounded-2xl mb-6">
-                  <p className="mb-2">適合對象：<span className="font-bold">從企業職場轉型為自由工作者 / 數位遊牧者的專業人士</span></p>
-                  <p>優惠價格：<span className="text-title-2xl text-primary">NT$ 120,000</span></p>
-                </div>
-                <ButtonComponent>
-                  <div className="flex">
-                    <p>我有興趣</p>
-                    <span className="material-symbols-outlined">chevron_right</span>
-                  </div>
-                </ButtonComponent>
-              </div>
-              <div className="shrink max-w-[300px] max-h-[337px]">
-                <img className="w-full h-full" src="/images/service/plan-1.svg" alt="" />
-              </div>
+            <div className="flex flex-col gap-6">
+              {planData.map((plan) => (
+                <PlanCard 
+                  key={plan.id}
+                  {...plan}
+                />
+              ))}
             </div>
           </div>
         </div>
