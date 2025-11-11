@@ -1,6 +1,7 @@
 import { ButtonComponent } from "../components/ui/Button";
 import { PlanCard } from "../components/ui/PlanCard";
 import { ConsultPlanCard } from "../components/ui/ConsultPlanCard";
+import { CTASection } from "../components/ui/CTASection";
 
 import { planData } from "../data/mockData";
 import { consultPlanData } from "../data/mockData";
@@ -52,6 +53,7 @@ function ServicePage() {
             </div>
           </div>
         </div>
+        {/* member section */}
         <div className="py-12 md:py-20 relative">
           <div className="container z-1 grid grid-cols-6">
             <div className="mb-6 md:md-12 flex flex-col items-center col-span-4 col-start-2">
@@ -81,6 +83,8 @@ function ServicePage() {
           </div>
           <div className="w-full bg-natural-95 h-[300px] absolute top-0 -z-10"></div>
         </div>
+        
+        <CTASection />
       </main>
     );
   }
