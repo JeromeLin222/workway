@@ -20,7 +20,7 @@ export function PlanCard({
 				<ul className="flex flex-col gap-1 mb-6">
 					{features.map((feature, index) => (
 						<li key={index} className="flex text-body-sm lg:text-body-md">
-							<span class="material-symbols-outlined text-primary mr-2">stat_0</span>
+							<span className="material-symbols-outlined text-primary mr-2">stat_0</span>
 							{feature}
 						</li>
 					))}

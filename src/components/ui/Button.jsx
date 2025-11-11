@@ -29,7 +29,7 @@ export function ButtonComponent({
   }
   const sizeMap = {
     lg: "px-5 py-4 text-title-2xl",
-    md: "px-4 py-3",
+    md: "pl-4 pr-2 py-3",
     sm: "px-2 py-1 text-body-sm text-natural-50",
     custom: ""
   }

@@ -115,6 +115,11 @@
   --text-body-xs--line-height: 1.5;
   --text-body-xs--font-weight: 400;
 
+  /* =========================
+   * Box Shadow
+   * ========================= */
+  --shadow-card: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 @utility container {

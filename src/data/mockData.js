@@ -138,7 +138,7 @@ export const faqData = [
 
 export const planData = [
   {
-    id:1,
+    id: 1,
     label: "全面方案",
     title: "職涯轉型全程計畫",
     description:"針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。",
@@ -155,7 +155,7 @@ export const planData = [
     highlighted: true
   },
   {
-    id:2,
+    id: 2,
     label: "加速方案",
     title: "自由工作加速計畫",
     description:"為已確定要轉型但需要全面規劃的專業人士設計。六次深度諮詢，從心態調整到實際操作，全方位為您的轉型做好準備。",
@@ -172,7 +172,7 @@ export const planData = [
     highlighted: false
   },
   {
-    id:3,
+    id: 3,
     label: "遊牧方案",
     title: "數位遊牧生活計畫",
     description:"針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。",
@@ -188,5 +188,34 @@ export const planData = [
     badge: null,
     highlighted: false
   },
+]
 
+export const consultPlanData = [
+  {
+    id: 1,
+    title: "職涯探索評估",
+    description: "3 次一對一諮詢，了解可能性和適配性",
+    image: "/images/service/server-1.svg",
+    price: 3800,
+    badge: null,
+    highlighted: false
+  },
+  {
+    id: 2,
+    title: "職涯轉型規劃",
+    description: "6 次深度諮詢，建立完整轉型藍圖",
+    image: "/images/service/server-2.svg",
+    price: 12000,
+    badge: "Hot",
+    highlighted: true
+  },
+  {
+    id: 3,
+    title: "專業定位與品牌建立",
+    description: "4 次專業諮詢，確立市場定位與差異化策略",
+    image: "/images/service/server-3.svg",
+    price: 8800,
+    badge: null,
+    highlighted: false
+  }
 ]
